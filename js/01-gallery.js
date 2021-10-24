@@ -12,8 +12,8 @@ galleryItemsEl.insertAdjacentHTML('beforeend', galleryCards);
 
 function createImagesGallery(images) {
     return images
-    .map(({preview, original, description}) => {
-        return `
+    .map(({preview, original, description}) =>
+         `
         <div class="gallery__item">
         <a class="gallery__link" href="${original}">
           <img
@@ -25,7 +25,7 @@ function createImagesGallery(images) {
         </a>
       </div>
         `
-    })
+    )
     .join("");
 }
 
